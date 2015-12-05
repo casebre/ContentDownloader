@@ -80,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             result = task.execute("http://api.openweathermap.org/data/2.5/weather?q=Barrie,ca&appid=2de143494c0b295cca9337e1e96b00e0").get();
-            //TextView textView = (TextView)findViewById(R.id.resultText);
-            //textView.setText(result);
+            TextView textView = (TextView)findViewById(R.id.resultText);
+            textView.setText(result);
 
            Log.i("Content: ", result);
 
